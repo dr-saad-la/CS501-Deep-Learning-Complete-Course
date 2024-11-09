@@ -29,5 +29,21 @@ The Python crash course is designed to help students:
 
 For more details or inquiries, feel free to contact Dr. Saad Laouadi via email.
 
+## Cloning the Repository
+To complete assignments and practice coding, follow these steps to clone the repository to your local machine:
+
+1. Open your terminal (or command prompt).
+2. Navigate to the directory where you want to clone the repository.
+3. Use the following command to clone the repository:
+   ```bash
+   git clone https://github.com/dr-saad-la/CS501-Deep-Learning-Complete-Course.git
+   ```
+
+4.	Once cloned, navigate into the repository directory:
+   ```bash
+   cd CS501-Deep-Learning-Complete-Course
+   ```
+
+5.	You can now access the course materials, complete assignments, and practice exercises.
 ---
 © Dr. Saad Laouadi. All Rights Reserved.
