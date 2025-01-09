@@ -1,0 +1,51 @@
+[
+project
+]
+
+name = "dltools"
+version = "0.1.0"
+description = "Deep Learning tools for deep learning and machine learning course projects"
+authors = [
+    {name = "Saad Laouadi", email = "dr.saad.laouadi@gmail.com"},
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "torch>=2.0.0",
+    "tensorflow>=2.16.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "isort>=5.0",
+    "mypy>=1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
