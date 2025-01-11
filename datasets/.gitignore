@@ -1,0 +1,5 @@
+# ignore large datasets
+creditcard.csv
+black_friday/*
+bank_marketing/*
+student_performance/*
